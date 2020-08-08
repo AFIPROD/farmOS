@@ -27,4 +27,4 @@ jobs:
             --output "type=image,push=false" \
             --build-arg FARMOS_REPO=https://github.com/${GITHUB_REPOSITORY} \
             --build-arg FARMOS_BRANCH=${FARMOS_BRANCH} \
-            --file ./docker/dev/Dockerfile ./
+            --file ./docker/dev/Dockerfile ./docker/dev
