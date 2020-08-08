@@ -34,7 +34,7 @@ RUN git clone --branch ${FARMOS_BRANCH} ${FARMOS_REPO} /tmp/farmOS && \
   chown -R www-data:www-data /tmp/www
 
 # Set the entrypoint.
-COPY docker-entrypoint.sh /usr/local/bin/
-RUN chmod u+x /usr/local/bin/docker-entrypoint.sh
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
+# COPY docker-entrypoint.sh /usr/local/bin/
+# RUN chmod u+x /usr/local/bin/docker-entrypoint.sh
+# ENTRYPOINT ["docker-entrypoint.sh"]
+# CMD ["apache2-foreground"]
